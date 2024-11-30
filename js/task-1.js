@@ -1,6 +1,9 @@
 function makeTransaction(guantity, pricePerDroid) {
-  console.log(`You ordered ${guantity} droids worth ${pricePerDroid} credits!`);
+  const totalPrice = guantity * pricePerDroid;
+
+  return `You ordered ${guantity} droids worth ${totalPrice} credits!`;
 }
-makeTransaction(5, 3000);
-makeTransaction(3, 1000);
-makeTransaction(10, 500);
+
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
